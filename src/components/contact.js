@@ -55,7 +55,7 @@ const Contact = () => {
                         <p style={{fontSize: "1.5rem" , fontWeight:"500"}}>Let's connect</p>
                     </div>
                     <div>
-                        <button className="resume-btn">Download resume</button>
+                        <button className="resume-btn"><a href="https://drive.google.com/file/d/1-1zNT2rd-Li4k82cGdet3seyBiUGSZWJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download resume</a></button>
                     </div>
                 </div>
                 <form onSubmit={handleSubmit} className='contact-form'>
