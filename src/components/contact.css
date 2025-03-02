@@ -1,0 +1,126 @@
+.contactme {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #20B2AA;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    gap: 40px;
+}
+
+.text1 {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resume-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: medium;
+    color: #333;
+    border: 2px solid #20B2AA;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+.resume-btn:hover {
+    background-color: #1a8f88;
+    transform: scale(1.05);
+    color: #f5f5f5;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #20B2AA;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: medium;
+    color: white;
+    background-color: #20B2AA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #1a8f88;
+    transform: scale(1.05);
+}
+.status-message {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+  }
+  
+  .status-message.error {
+    color: red;
+  }
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    .contact-form input,
+.contact-form textarea{
+    max-width: 200px;
+}
+    
+    .text1 {
+        
+        font-size: 1.2rem;
+        align-items: center;
+    }
+    .paragraph p{
+        text-align: center;
+    }
+    
+}
